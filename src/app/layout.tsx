@@ -18,6 +18,22 @@ export const metadata: Metadata = {
     description:
       "Live Canadian wildfire perimeters and hotspots, 54 years of burned-area history, and fire-weather watch scores. Open data, open source.",
     type: "website",
+    url: "https://fire.canada.nshipyard.com",
+    images: [
+      {
+        url: "https://fire.canada.nshipyard.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Canada Wildfire Watch",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Canada Wildfire Watch",
+    description:
+      "Live Canadian wildfire perimeters and hotspots, 54 years of burned-area history, and fire-weather watch scores. Open data, open source.",
+    images: ["https://fire.canada.nshipyard.com/og-image.png"],
   },
 };
 
