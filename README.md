@@ -40,6 +40,14 @@ API: `/api/v1/live`, `/api/v1/history`, `/api/v1/stations` (no key).
 - Natural Resources Canada, Canadian Wildland Fire Information System: live hotspots, perimeters, fire danger rating, weather stations, situation reports (https://cwfis.cfs.nrcan.gc.ca)
 - National Burned Area Composite summary statistics 1972-2025 (https://cwfis.cfs.nrcan.gc.ca/downloads/nbac)
 
+## Screenshots
+
+![Desktop](docs/screenshots/desktop.png)
+![Live map](docs/screenshots/desktop-map.png)
+![History](docs/screenshots/desktop-history.png)
+![Mobile](docs/screenshots/mobile.png)
+![French](docs/screenshots/desktop-fr.png)
+
 ## Author
 
 Built by **Richardson Dackam** · [X](https://x.com/richardsondx) · [GitHub](https://github.com/richardsondx)
