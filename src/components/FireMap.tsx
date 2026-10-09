@@ -22,8 +22,8 @@ export default function FireMap({ fires, hotspots, showFires, showHotspots }: Pr
       if (cancelled || !divRef.current) return;
       if (!mapRef.current) {
         const map = L.map(divRef.current, { zoomControl: true }).setView([57, -106], 4);
-        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-          attribution: "&copy; OpenStreetMap &copy; CARTO",
+        L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
+          attribution: 'Basemap: <a href="https://www.esri.com">Esri</a> &middot; &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           maxZoom: 12,
         }).addTo(map);
         mapRef.current = map;
