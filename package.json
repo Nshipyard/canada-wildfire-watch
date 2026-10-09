@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf public/data && cp -r data public/data && next build",
+    "build": "mkdir -p public && rm -rf public/data && cp -r data public/data && next build",
     "start": "next start",
     "lint": "eslint"
   },
