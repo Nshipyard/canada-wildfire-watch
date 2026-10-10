@@ -38,16 +38,19 @@ export function Header() {
     <header className={`sticky top-0 z-40 bg-paper/95 backdrop-blur border-b transition-shadow ${scrolled ? "border-line shadow-[0_1px_12px_rgba(10,15,30,0.06)]" : "border-transparent"}`}>
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
         <a href="#top" className="flex items-center gap-2.5 min-w-0">
-          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden className="shrink-0">
-            <path d="M13 1l2.6 5.6 6.1.7-4.5 4.1 1.2 6-5.4-3-5.4 3 1.2-6L4.3 7.3l6.1-.7z" fill="#d80621" />
-            <path d="M13 8c-3 2.5-4.5 5-4.5 7.5A4.5 4.5 0 0013 20a4.5 4.5 0 004.5-4.5C17.5 13 16 10.5 13 8z" fill="#d80621" opacity="0.55" />
+          <svg width="24" height="26" viewBox="-1860 -2000 3720 4030" aria-hidden="true" fill="currentColor" className="shrink-0 text-canada">
+            <path d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z" />
           </svg>
-          <span className="display text-lg leading-none truncate">Canada Wildfire Watch</span>
+          <span className="min-w-0 leading-none">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-ink/55">Open Nshipyard</span>
+            <span className="display block text-lg leading-tight truncate">Canada Wildfire Watch</span>
+          </span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {links.map(([label, href]) => (
             <a key={href} href={href} className="text-ink/70 hover:text-ink transition-colors">{label}</a>
           ))}
+          <a href="https://canada.nshipyard.com" className="text-ink/70 hover:text-ink transition-colors">&larr; {t.nav.back}</a>
         </nav>
         <div className="flex items-center gap-2">
           <button
@@ -64,6 +67,7 @@ export function Header() {
           {links.map(([label, href]) => (
             <a key={href} href={href} className="text-ink/70">{label}</a>
           ))}
+          <a href="https://canada.nshipyard.com" className="text-ink/70">&larr; {t.nav.back}</a>
         </div>
       </nav>
     </header>
